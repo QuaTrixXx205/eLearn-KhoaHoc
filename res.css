@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1600px) {
+    .course{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .sideBar{
+        flex: 20%;
+    }
+
+    .signUp button, .signIn button{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .sideBar {
+        position: fixed;
+        top: 70px;
+        left: 0; 
+        right: 0;   
+    }   
+
+    .signUp button, .signIn button{
+        width: 95%;
+    }
+
+    .main {
+        width: 100%; 
+    }
+    .course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

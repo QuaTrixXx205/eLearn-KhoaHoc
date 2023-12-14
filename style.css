@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+.core{
+    display: flex;
+    background-color: #eaecee;
+}
+.sideBar{
+    flex: 20%;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    color: #eaecee;
+    background-color: #343a40;
+    transition: all 0.3s ease;
+}
+
+.sideBar ul li{
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.sideBar ul li:hover{
+    background-color: #565d64;
+}
+
+.sideBar ul li a:hover{
+    color: #42a5f5;
+}
+
+.sideBar ul li a{
+    text-decoration: none;
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(199, 191, 191, 0.8);
+    text-transform: uppercase;
+}
+.sideBar ul li a i{
+    margin-right: 6px;
+}
+
+.topNavContainer{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.dropdown-btn{
+    background: none;
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-btn:hover .fa-caret-down,
+#lapTrinhDropDown:hover .fa-angle-down,
+#englishDropDown:hover .fa-angle-down {
+    color: #42a5f5;
+}
+
+.fa-caret-down, .fa-angle-down {
+    float: right;
+    color: #AEA9AB;
+}
+
+.dropdown-container, .nested-dropdown-container {
+    display: none;
+}
+
+
+.nested-dropdown-btn.active .nested-dropdown-container {
+    display: block;
+}
+
+
+/*  */
+
+.title{
+    text-decoration: none;
+    padding: 5px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(199, 191, 191, 0.8);
+    text-transform: uppercase;
+}
+
+.logo{
+    margin: 15px 0 5px 0;
+}
+
+.logo, .signIn, .signUp{
+    text-align: center;
+    padding: 8px;
+}
+.signIn button{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    color: #42a5f5;
+    background-color: transparent;
+    background-image: none;
+    border-color: #42a5f5;
+    cursor: pointer;
+}
+
+.signIn button:hover{
+    background-color: #42a5f5;
+    color: white;
+}
+
+.signUp button{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ef5350;
+    border-color: #ea1c18;
+    cursor: pointer;
+}
+
+.signUp button:hover{
+    background-color: #f3221f;
+}
+
+#closeSideBar{
+    display: none;
+}
+.sideBar.closed {
+    display: none;
+}
+.main{
+    width: 100%;
+    background-color: #eaecee;
+    transition: margin-left 0.3s ease;
+}
+
+.navSideBar{
+    padding: 20px 0px;
+}
+
+.navSideBar ul {
+    list-style: none;
+}
+
+.navSideBar ul li{
+    padding: 10px 30px;
+}
+
+
+.s-content{
+    margin: 0 auto;
+    padding: 20px 50px;
+    width: 100%;
+    overflow-x: visible;
+}
+.sd-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    position: sticky;
+    top: 0;
+    color: #eaecee;
+    background-color: #343a40;
+}
+.toggle, #closeSideBar{
+    padding: 9px 0;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: inherit;
+    min-width: 34px;
+    height: 34px;
+    text-align: center;
+    border-radius: 50%!important;
+    cursor: pointer;
+}
+.toggle:hover{
+    background-color: rgb(11, 10, 10);
+    
+}
+.toggle button{
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Item Course */
+.course{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item-course{
+    border-radius: 5px;
+    height: auto;
+    background-color: white;
+    cursor: pointer;
+}
+.item-course:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+}
+.item-image{
+    width: auto;
+    height: auto;
+}
+.item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-image{
+    padding: 15px;
+}

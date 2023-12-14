@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="core">
+            <div class="sideBar">
+                <div class="logo">
+                    <label>LOGO</label>
+                </div>
+                <div class="signUp">
+                    <button>Đăng ký</button>
+                </div>
+                <div class="signIn">
+                    <button>Đăng nhập</button>
+                </div>
+                <div class="navSideBar">
+                    <div class="title">
+                        <label>PAGES</label>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="dropdown-btn" >
+                                <a href="#"><i class="fa-solid fa-book"></i>KHÓA HỌC <i class="fa fa-caret-down"></i></a>
+                            </div>
+                            <div class="dropdown-container nested-dropdown-btn">
+                                <ul>
+                                    <li id="lapTrinhDropDown"><a href="#">Lập trình <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="nested-dropdown-container">
+                                            <li><a href="#">Lập trình ngôn ngữ C++</a></li>
+                                            <li><a href="#">Winform C#</a></li>
+                                            <li><a href="#">Java</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="englishDropDown"><a href="#">English <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="nested-dropdown-container">
+                                            <li><a href="#">English 1</a></li>
+                                            <li><a href="#">English 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-circle-question"></i>HỎI ĐÁP</a></li>
+                        <li><a href="#"><i class="fa-solid fa-file"></i>BÀI VIÉT</a></li>
+                        <li><a href="#"><i class="fa-solid fa-tag"></i>TAG</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i>LHER</a></li>
+                        <li><a href="#"><i class="fa-solid fa-address-card"></i>VỀ LHER</a></li>
+                        <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i>TÀI TRỢ</a></li>
+                        <li><a href="#"><i class="fa-solid fa-reply"></i>PHẢN HỒI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <nav class="topNavContainer">
+                    <div class="sd-flex navigation s-content">
+                        <div class="toggle" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
+                        <div class="tools">User</div>
+                    </div>
+                </nav>
+                <div class="course s-content">
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div>  
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div> 
+
+                    <div class="item-course">
+                        <div class="item-image">
+                            <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                        </div>
+                        <div class="title-image">
+                            <h4>Khóa học JavaScript cơ bản</h4>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="func.js"></script>
+</body>
+</html>
