@@ -63,9 +63,23 @@
                 <nav class="topNavContainer">
                     <div class="sd-flex navigation s-content">
                         <div class="toggle" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
-                        <div class="tools">User</div>
+                        <div class="accountDropDownContainer">
+                            <button class="account-BTN" onclick="openAccountDropDown()">
+                                <i class="fa-regular fa-circle-user"></i> Tài khoản <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <div id="accountDropDown" class="account-dropdown-content">
+                                <a href=""> <i class="fa-regular fa-user"></i> Đăng nhập</a>
+                                <a href=""> <i class="fa-solid fa-user-plus"></i> Đăng ký</a>
+                            </div>
+                        </div>
                     </div>
                 </nav>
+
+                <form class="searchCourseForm" action="">
+                    <input type="text" placeholder="Tìm khóa học..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
                 <div class="course s-content">
                     <div class="item-course">
                         <div class="item-image">

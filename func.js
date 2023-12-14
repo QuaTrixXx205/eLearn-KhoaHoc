@@ -1,28 +1,46 @@
+// Open and close sidebar 
 var isClosed = false;
-
-//Open sidebar
 function toggleSidebar() {
-  $(".sideBar").toggleClass("closed");
-  isClosed = !isClosed;
+    $(".sideBar").toggleClass("closed");
+    isClosed = !isClosed;
 }
 
-//Close sidebar
-function closeSidebar() {
-  $(".sideBar").addClass("closed");
-  isClosed = true;
+// Hide sidebar when screen width is below 999px
+$(window).resize(function () {
+  var windowWidth = window.innerWidth;
+  if(windowWidth < 999)
+  {
+    // console.log("Sidebar close on default");
+    $(".sideBar").addClass("closed");
+    isClosed = true;
+  }
+});
+
+//Open account drop down
+function openAccountDropDown() {
+  document.getElementById("accountDropDown").classList.toggle("show");
 }
+
+document.addEventListener('click', function(event) {
+  var accountDropDown = document.getElementById("accountDropDown");
+  var accountButton = document.querySelector('.accountDropDownContainer .account-BTN');
+
+  if (!accountButton.contains(event.target) && !accountDropDown.contains(event.target)) {
+    accountDropDown.classList.remove('show');
+  }
+});
+
 
 // Main and nested dropdown
 $('.dropdown-btn, .nested-dropdown-btn').click(function (event) {
   event.stopPropagation();
 
   var dropdownContent = $(this).next('.dropdown-container, .nested-dropdown-container');
-  var isActive = $(this).toggleClass('active').hasClass('active');
+  var isVisible = dropdownContent.slideToggle().is(':visible');
 
   // Close all dropdowns and slide the clicked dropdown
-  $('.dropdown-btn, .nested-dropdown-btn').not(this).removeClass('active');
+  $('.dropdown-btn, .nested-dropdown-btn').not(this).removeClass('visible');
   $('.dropdown-container, .nested-dropdown-container').not(dropdownContent).slideUp();
-  dropdownContent.slideToggle(isActive);
 });
 
 // Open specific nested dropdowns with ID
@@ -31,10 +49,9 @@ $('#lapTrinhDropDown, #englishDropDown').click(function (event) {
 
   // Show only the clicked nested dropdown
   var nestedDropdownContent = $(this).children('ul');
-  var isActive = $(this).toggleClass('active').hasClass('active');
+  var isVisible = nestedDropdownContent.slideToggle().is(':visible');
 
   // Close other nested dropdowns and slide the clicked nested dropdown
-  $('.nested-dropdown-btn').not(this).removeClass('active');
+  $('.nested-dropdown-btn').not(this).removeClass('visible');
   $('.nested-dropdown-container ul').not(nestedDropdownContent).slideUp();
-  nestedDropdownContent.slideToggle(isActive);
 });
