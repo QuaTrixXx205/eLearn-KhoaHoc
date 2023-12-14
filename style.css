@@ -157,7 +157,7 @@
 }
 
 .navSideBar ul li{
-    padding: 10px 30px;
+    padding: 5px 30px;
 }
 
 
@@ -251,28 +251,33 @@
 }
 
 /* Item Course */
-form.searchCourseForm{
+.searchCourseForm{
     margin: 10px 50px;
 }
 
-form.searchCourseForm button{
+.searchCourseForm button{
     float: right;
-    width: 5%;
+    width: 3%;
     padding: 10px;
     color: rgb(75, 75, 75);
     font-size: 17px;
     border: 0.1px solid grey;
-    border-left: none; /* Prevent double borders */
+    /* border-left: none; */
     cursor: pointer;
+    position: absolute;
+    right: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-form.searchCourseForm input[type=text] {
+.searchCourseForm input[type=text] {
     float: left;
     padding: 10px;
     font-size: 17px;
     border: 0.1px solid grey;
-    width: 95%;
+    width: 97%;
     background: #f1f1f1;
+    border-radius: 5px;
 }
 
 .course{
@@ -299,6 +304,44 @@ form.searchCourseForm input[type=text] {
     height: 100%;
     object-fit: cover;
 }
-.title-image{
+.item-content{
     padding: 15px;
+}
+.title-image{
+    font-size: 16px;
+    font-family: 'Google Sans',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #171717;
+}
+.vote-course{
+    padding: 10px 0px;
+    color: #ffca28!important;
+}
+.badge{
+    background-color: #ffca28;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    border-radius: 10rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: .857143rem!important;
+}
+.course-detail{
+    padding: 10px 0px;
+}
+.text-gray{
+    color: #707070!important;
+}
+.voteCount{
+    font-weight: 700!important;
+}
+.f-bold-700{
+    font-weight: 700!important;
+}
+.detail-2{
+    padding-top: 15px;
+}
+.text-red {
+    color: #ef5350!important;
 }

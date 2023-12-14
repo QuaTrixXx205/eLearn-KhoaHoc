@@ -55,3 +55,23 @@ $('#lapTrinhDropDown, #englishDropDown').click(function (event) {
   $('.nested-dropdown-btn').not(this).removeClass('visible');
   $('.nested-dropdown-container ul').not(nestedDropdownContent).slideUp();
 });
+
+// Search module
+$(document).ready(function () {
+  $("input[name='search']").on("input", function () {
+      // Get the input value
+      var keyword = $(this).val().toLowerCase();
+
+      // Filter the item-course elements based on the keyword
+      $(".item-course").each(function () {
+          var courseTitle = $(this).find(".title-image h4").text().toLowerCase();
+
+          // Show or hide the element based on the matching keyword
+          if (courseTitle.includes(keyword)) {
+              $(this).show();
+          } else {
+              $(this).hide();
+          }
+      });
+  });
+});
