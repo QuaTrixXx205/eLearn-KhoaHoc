@@ -11,8 +11,8 @@
     .signUp button, .signIn button{
         width: 95%;
     }
-
 }
+
 @media only screen and (max-width: 999px) {
     .sideBar {
         width: 100%;
@@ -41,6 +41,10 @@
     }
     .searchCourseForm button{
         width: auto;
+    }
+
+    .coursePicture img{
+        width: 70%;
     }
 
 }

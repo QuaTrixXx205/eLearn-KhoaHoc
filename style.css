@@ -351,3 +351,59 @@
 .text-red {
     color: #ef5350!important;
 }
+
+/* Course detail */
+.courseDetailContainer{
+    margin: 10px 50px;
+}
+
+.courseHeader,
+.courseOverview,
+.courseTeacher,
+.courseKnowledge{
+    margin: 15px 0;
+}
+
+.joinCourseBTN, .coursePicture{
+    text-align: center;
+    margin: 20px;
+}
+
+.joinCourseBTN button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.joinCourseBTN button:hover{
+    background-color: #f56562;
+}
+
+/* Breadcrumb */
+ul.breadcrumb {
+    width: 94%;
+    padding: 10px 0;
+    margin: 15px 50px;
+    border-radius: 5px;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
