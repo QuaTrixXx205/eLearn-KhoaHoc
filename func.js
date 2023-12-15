@@ -5,6 +5,16 @@ function toggleSidebar() {
     isClosed = !isClosed;
 }
 
+//Change (rotate) the icon when dropdown active
+function dropDownActive(btn) {
+  const caretIcon = btn.querySelector('#caretIcon');
+  caretIcon.classList.toggle('rotate-up');
+}
+function dropDownNestedActive(btn) {
+  const angleIcon = btn.querySelector('#angleIcon')
+  angleIcon.classList.toggle('rotate-up');
+}
+
 // Hide sidebar when screen width is below 999px
 $(window).resize(function () {
   var windowWidth = window.innerWidth;

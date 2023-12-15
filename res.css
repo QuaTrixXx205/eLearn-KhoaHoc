@@ -11,14 +11,23 @@
     .signUp button, .signIn button{
         width: 95%;
     }
+
 }
 @media only screen and (max-width: 999px) {
     .sideBar {
+        width: 100%;
         position: fixed;
         top: 70px;
-        left: 0; 
-        right: 0;   
-    }   
+        left: 0;
+        right: 0;
+        z-index: 1;
+        transition: margin-left 0.3s ease-in-out; 
+        padding-top: 20px;  
+    } 
+    
+    .sideBar.closed {
+        margin-left: -100%;
+    }
 
     .signUp button, .signIn button{
         width: 95%;

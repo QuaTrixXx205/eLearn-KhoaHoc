@@ -2,12 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Google Sans',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+    font-family: 'Google Sans',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.rotate-up {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out; 
 }
 
 .core{
     display: flex;
-    background-color: #eaecee;
+    /* background-color: #eaecee; */
 }
 .sideBar{
     flex: 15%;
@@ -17,7 +22,8 @@
     top: 0;
     color: #eaecee;
     background-color: #343a40;
-    transition: all 0.3s ease;
+    z-index: 1;
+    transition: margin-left 0.3s ease-in-out;
 }
 
 .sideBar ul li{
@@ -53,6 +59,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .dropdown-btn{
@@ -140,12 +147,11 @@
     display: none;
 }
 .sideBar.closed {
-    display: none;
+    /* display: none; */
+    margin-left: -100%;
 }
 .main{
     width: 100%;
-    background-color: #eaecee;
-    transition: margin-left 0.3s ease;
 }
 
 .navSideBar{
@@ -231,12 +237,11 @@
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .account-dropdown-content a{
     color: black;
-    padding: 12px 16px;
+    padding: 12px 18px;
     text-decoration: none;
     display: block;
     font-size: 16px;
@@ -291,9 +296,10 @@
     height: auto;
     background-color: white;
     cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
 }
 .item-course:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+    box-shadow: rgba(78, 78, 78, 0.2) 0px 8px 24px;  
 }
 .item-image{
     width: auto;

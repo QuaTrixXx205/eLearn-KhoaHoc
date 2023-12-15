@@ -28,19 +28,19 @@
                     </div>
                     <ul>
                         <li>
-                            <div class="dropdown-btn" >
-                                <a href="#"><i class="fa-solid fa-book"></i>KHÓA HỌC <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-btn" onclick="dropDownActive(this)">
+                                <a href="#"><i class="fa-solid fa-book"></i>KHÓA HỌC <i class="fa fa-caret-down" id="caretIcon"></i></a>
                             </div>
                             <div class="dropdown-container nested-dropdown-btn">
                                 <ul>
-                                    <li id="lapTrinhDropDown"><a href="#">Lập trình <i class="fa-solid fa-angle-down"></i></a>
+                                    <li id="lapTrinhDropDown" onclick="dropDownNestedActive(this)"><a href="#">Lập trình <i class="fa-solid fa-angle-down" id="angleIcon"></i></a>
                                         <ul class="nested-dropdown-container">
                                             <li><a href="#">Lập trình ngôn ngữ C++</a></li>
                                             <li><a href="#">Winform C#</a></li>
                                             <li><a href="#">Java</a></li>
                                         </ul>
                                     </li>
-                                    <li id="englishDropDown"><a href="#">English <i class="fa-solid fa-angle-down"></i></a>
+                                    <li id="englishDropDown" onclick="dropDownNestedActive(this)"><a href="#">English <i class="fa-solid fa-angle-down" id="angleIcon"></i></a>
                                         <ul class="nested-dropdown-container">
                                             <li><a href="#">English 1</a></li>
                                             <li><a href="#">English 2</a></li>
