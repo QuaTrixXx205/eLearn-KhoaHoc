@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="core">
+            <div class="sideBar">
+                <div class="logo">
+                    <label>LOGO</label>
+                </div>
+                <div class="signUp">
+                    <button>Đăng ký</button>
+                </div>
+                <div class="signIn">
+                    <button>Đăng nhập</button>
+                </div>
+                <div class="navSideBar">
+                    <div class="title">
+                        <label>PAGES</label>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>MÔN HỌC</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i>GIÁO VIÊN</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chalkboard"></i>BÀI GIẢNG</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <nav class="topNavContainer">
+                    <div class="sd-flex navigation s-content">
+                        <div class="toggle" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
+                        <div class="accountDropDownContainer">
+                            <button class="account-BTN" onclick="openAccountDropDown()">
+                                <i class="fa-regular fa-circle-user"></i> Tài khoản <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <div id="accountDropDown" class="account-dropdown-content">
+                                <a href=""> <i class="fa-regular fa-user"></i> Đăng nhập</a>
+                                <a href=""> <i class="fa-solid fa-user-plus"></i> Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- <ul class="breadcrumb">
+                    <li><a href="../index.html">Khóa học</a></li>
+                    <li>Khóa học JavaScript cơ bản</li>
+                </ul> -->
+
+                <div class="courseDetailContainer">
+                    <div class="courseHeader">
+                        <h1>Môn học</h1>
+                    </div>
+                    <div class="courseContent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../func.js"></script>
+</body>
+</html>
