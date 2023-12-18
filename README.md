@@ -1,2 +1,2 @@
 # eLearn-KhoaHoc
-# Thêm trang quản lý - chưa có các chức năng nhất định của bài giảng, giáo viên, môn học. 17/12/2023
+# fix lỗi ảnh course responsive, chỉnh sửa trang admin (chưa có đầy đủ chức năng, trang) 18/12/2023
