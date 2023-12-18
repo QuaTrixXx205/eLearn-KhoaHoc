@@ -355,6 +355,7 @@
 /* Course detail */
 .courseDetailContainer{
     margin: 10px 50px;
+    text-align: justify;
 }
 
 .courseHeader,
@@ -366,9 +367,17 @@
 .course-infor{
     display: flex;
 }
-.course-left, .course-right{
+
+.course-left{
     padding: 10px;
     margin: 5px;
+    width: 50%;
+}
+
+.course-right{
+    margin: 5px;
+    width: 50%;
+    height: 100%;
 }
 
 .joinCourseBTN{
@@ -387,6 +396,10 @@
 
 .joinCourseBTN button:hover{
     background-color: #f56562;
+}
+
+.coursePicture img{
+    width: 100%;    
 }
 
 /* Breadcrumb */
@@ -415,3 +428,54 @@ ul.breadcrumb {
     color: #01447e;
     text-decoration: underline;
   }
+
+  /* Admin */
+  .addButton, .editButton, .deleteButton{
+    padding: 5px 30px;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+    border-radius: 5px;
+    border: 0.5px solid #000000;
+  }
+
+  /* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+#courseName,
+#courseAuthor{
+    width: 100%;
+    height: 35px;
+    margin: 5px 0;
+    padding: 10px;
+}
+

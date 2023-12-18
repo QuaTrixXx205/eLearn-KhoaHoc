@@ -55,16 +55,90 @@
                 </ul> -->
 
                 <div class="courseDetailContainer">
-                    <div class="courseHeader">
-                        <h1>Môn học</h1>
-                    </div>
-                    <div class="courseContent">
-
+                    <div id="mon-hoc">  
+                        <div class="courseHeader">
+                            <h1>Môn học</h1>
+                        </div>
+                        <div class="courseContent">
+                            <button class="addButton" onclick="openModal()">Thêm</button>
+                            <button class="editButton">Sửa</button>
+                            <button class="deleteButton">Xóa</button>
+                        </div>
+                        <div class="course s-content" style="padding: 20px 0;">
+                            <div class="item-course" onclick="location.href = './courseDetail.html'">
+                                <div class="item-image">
+                                    <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                                </div>
+                                <div class="item-content">
+                                    <div class="title-image">
+                                        <h4>Khóa học JavaScript cơ bản</h4>
+                                    </div>
+                                    <div class="vote-course">
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <span class="voteCount text-gray f-bold-700">5.0</span>
+                                        <span class="peopleVoteCount text-gray">(25)</span>
+                                    </div>
+                                    <span class="badge">From LHU</span>
+                                    <div class="course-detail text-gray">
+                                       <div class="detail-1"> <i class="fa-solid fa-book"></i></div>
+                                       <div class="detail-2">
+                                            <span class="text-gray">Tác giả/Dịch giả:</span>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="item-course" onclick="location.href = './courseDetail.html'">
+                                <div class="item-image">
+                                    <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
+                                </div>
+                                <div class="item-content">
+                                    <div class="title-image">
+                                        <h4>Khóa học JavaScript cơ bản</h4>
+                                    </div>
+                                    <div class="vote-course">
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <i class="fa fa-fw fa-star"></i>
+                                        <span class="voteCount text-gray f-bold-700">5.0</span>
+                                        <span class="peopleVoteCount text-gray">(25)</span>
+                                    </div>
+                                    <span class="badge">From LHU</span>
+                                    <div class="course-detail text-gray">
+                                       <div class="detail-1"> <i class="fa-solid fa-book"></i></div>
+                                       <div class="detail-2">
+                                            <span class="text-gray">Tác giả/Dịch giả:</span>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div style="margin: 50px 0 0 0;">
+                <label for="courseName">Khóa học</label>
+                <input type="text" id="courseName" name="courseName" placeholder="Tên khóa học"> 
+                <label for="courseAuthor">Giáo viên</label>
+                <input type="text" id="courseAuthor" name="courseAuthor" placeholder="Giáo viên"> 
+                <p>...</p>
+                <button onclick="addCourse()" style="margin: 10px 0; padding: 5px 30px; cursor: pointer;">Thêm</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../func.js"></script>
 </body>

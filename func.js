@@ -91,3 +91,16 @@ $(document).ready(function () {
       });
   });
 });
+
+//Modal
+function openModal() {
+  document.getElementById('addModal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('addModal').style.display = 'none';
+}
+
+function addCourse() {
+  
+}

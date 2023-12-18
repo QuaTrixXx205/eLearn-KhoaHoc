@@ -16,6 +16,10 @@
     .course-infor{
         flex-direction: column-reverse;
     }
+
+    .course-left, .course-right{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 999px) {
@@ -40,6 +44,8 @@
 
     .main {
         width: 100%; 
+        font-size: 14px;
+        text-align: justify;
     }
     .course {
         grid-template-columns: repeat(2, 1fr);
