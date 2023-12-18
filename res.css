@@ -12,6 +12,11 @@
         width: 95%;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .course-infor{
+        flex-direction: column-reverse;
+    }
+}
 
 @media only screen and (max-width: 999px) {
     .sideBar {
@@ -44,7 +49,7 @@
     }
 
     .coursePicture img{
-        width: 70%;
+        width: 100%;
     }
 
 }

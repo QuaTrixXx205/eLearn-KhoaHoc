@@ -363,8 +363,15 @@
 .courseKnowledge{
     margin: 15px 0;
 }
+.course-infor{
+    display: flex;
+}
+.course-left, .course-right{
+    padding: 10px;
+    margin: 5px;
+}
 
-.joinCourseBTN, .coursePicture{
+.joinCourseBTN{
     text-align: center;
     margin: 20px;
 }
@@ -387,8 +394,9 @@ ul.breadcrumb {
     /* width: 94%; */
     padding: 10px 0;
     margin: 15px 50px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     list-style: none;
+    border-bottom: 1px solid rgb(211, 203, 203);
   }
   ul.breadcrumb li {
     display: inline;
@@ -400,7 +408,7 @@ ul.breadcrumb {
     content: "/\00a0";
   }
   ul.breadcrumb li a {
-    color: #0275d8;
+    color: #000000;
     text-decoration: none;
   }
   ul.breadcrumb li a:hover {

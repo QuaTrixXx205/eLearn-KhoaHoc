@@ -68,6 +68,12 @@ $('#lapTrinhDropDown, #englishDropDown').click(function (event) {
 
 // Search module
 $(document).ready(function () {
+  // check mobile devices
+  if(screen.width <= 999)
+  {
+    toggleSidebar();
+  }
+
   $("input[name='search']").on("input", function () {
       // Get the input value
       var keyword = $(this).val().toLowerCase();
