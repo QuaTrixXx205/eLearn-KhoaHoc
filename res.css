@@ -59,6 +59,8 @@
     }
 
 }
+
+
 @media only screen and (max-width: 767px) {
     .course {
         grid-template-columns: repeat(1, 1fr);
@@ -70,6 +72,10 @@
 
     form.searchCourseForm input[type=text] {
         width: 90%;
+    }
+
+    .addButton, .editButton, .deleteButton{
+        padding: 5px 10px;
     }
 }
 
@@ -84,5 +90,10 @@
 
     form.searchCourseForm input[type=text] {
         width: 85%;
+    }
+
+    .col{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }

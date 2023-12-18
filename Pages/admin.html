@@ -57,66 +57,50 @@
                 <div class="courseDetailContainer">
                     <div id="mon-hoc">  
                         <div class="courseHeader">
-                            <h1>Môn học</h1>
+                            <h1> <i class="fa-solid fa-book"></i> Môn Học</h1>
                         </div>
                         <div class="courseContent">
                             <button class="addButton" onclick="openModal()">Thêm</button>
-                            <button class="editButton">Sửa</button>
-                            <button class="deleteButton">Xóa</button>
-                        </div>
-                        <div class="course s-content" style="padding: 20px 0;">
-                            <div class="item-course" onclick="location.href = './courseDetail.html'">
-                                <div class="item-image">
-                                    <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
-                                </div>
-                                <div class="item-content">
-                                    <div class="title-image">
-                                        <h4>Khóa học JavaScript cơ bản</h4>
-                                    </div>
-                                    <div class="vote-course">
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <span class="voteCount text-gray f-bold-700">5.0</span>
-                                        <span class="peopleVoteCount text-gray">(25)</span>
-                                    </div>
-                                    <span class="badge">From LHU</span>
-                                    <div class="course-detail text-gray">
-                                       <div class="detail-1"> <i class="fa-solid fa-book"></i></div>
-                                       <div class="detail-2">
-                                            <span class="text-gray">Tác giả/Dịch giả:</span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>   
-                            <div class="item-course" onclick="location.href = './courseDetail.html'">
-                                <div class="item-image">
-                                    <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/7_JavaScript/Javascript%20cơ%20bản/00_%20Javascript%20basic_Kteam.png" alt="" srcset="">
-                                </div>
-                                <div class="item-content">
-                                    <div class="title-image">
-                                        <h4>Khóa học JavaScript cơ bản</h4>
-                                    </div>
-                                    <div class="vote-course">
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <i class="fa fa-fw fa-star"></i>
-                                        <span class="voteCount text-gray f-bold-700">5.0</span>
-                                        <span class="peopleVoteCount text-gray">(25)</span>
-                                    </div>
-                                    <span class="badge">From LHU</span>
-                                    <div class="course-detail text-gray">
-                                       <div class="detail-1"> <i class="fa-solid fa-book"></i></div>
-                                       <div class="detail-2">
-                                            <span class="text-gray">Tác giả/Dịch giả:</span>
-                                       </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tên khóa học</th>
+                                                    <th>Giáo viên</th>
+                                                    <th>Số tiết</th>
+                                                    <th>Chứng chỉ</th>
+                                                    <th>Thao tác</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Khóa học Javascript cơ bản</td>
+                                                    <td>Nguyễn Văn A</td>
+                                                    <td>50</td>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <button class="editButton"><i class="fa-solid fa-pencil"></i></button>
+                                                        <button class="deleteButton"><i class="fa-solid fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>English 5</td>
+                                                    <td>Nguyễn Văn B</td>
+                                                    <td>30</td>
+                                                    <td>2</td>
+                                                    <td>
+                                                        <button class="editButton"><i class="fa-solid fa-pencil"></i></button>
+                                                        <button class="deleteButton"><i class="fa-solid fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,6 +117,10 @@
                 <input type="text" id="courseName" name="courseName" placeholder="Tên khóa học"> 
                 <label for="courseAuthor">Giáo viên</label>
                 <input type="text" id="courseAuthor" name="courseAuthor" placeholder="Giáo viên"> 
+                <label for="courseLength">Số tiết</label>
+                <input type="text" id="courseLength" name="courseLength" placeholder="Số tiết"> 
+                <label for="courseCertificate">Chứng chỉ</label>
+                <input type="text" id="courseCertificate" name="courseCertificate" placeholder="Chứng chỉ"> 
                 <p>...</p>
                 <button onclick="addCourse()" style="margin: 10px 0; padding: 5px 30px; cursor: pointer;">Thêm</button>
             </div>
